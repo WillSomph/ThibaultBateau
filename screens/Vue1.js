@@ -6,5 +6,5 @@ export default function Vue1() {
   )
 }
 
-// export default function NomDuComponent({ img,titre }: { titre: string,img: ??? }) {}
+export default function NomDuComponent({ img,titre }: { titre: string,img: ??? }) {}
 
