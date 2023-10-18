@@ -12,8 +12,10 @@ import Vue2 from './screens/Vue2';
 import Vue3 from './screens/Vue3';
 import Vue4 from './screens/Vue4';
 import Vue5 from './screens/Vue5';
-
-
+import Vue50 from './screens/Vue50';
+import Vue51 from './screens/Vue51';
+import Vue52 from './screens/Vue52';
+import Vue53 from './screens/Vue53';
 
 
 
@@ -30,8 +32,11 @@ export default function App() {
           <Stack.Screen name="Vue3" component={Vue3} />
           <Stack.Screen name="Vue4" component={Vue4} />
           <Stack.Screen name="Vue5" component={Vue5} />
+          <Stack.Screen name="Vue50" component={Vue50} />
+          <Stack.Screen name="Vue51" component={Vue51} />   
+          <Stack.Screen name="Vue52" component={Vue52} />
+          <Stack.Screen name="Vue53" component={Vue53} />   
           </Stack.Navigator>
-          
         </ImageBackground>
       </NavigationContainer>
     );
