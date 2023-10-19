@@ -1,7 +1,23 @@
-import React from 'react'
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Vue51() {
   return (
-    <div>Vue51</div>
-  )
+    <View style={styles.container}>
+      <Text style={styles.centeredText}>ERROR 404</Text>
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, 
+    justifyContent: "center",
+    alignItems: "center", 
+  },
+  centeredText: {
+    fontSize: 50,
+    fontWeight: "bold", // txt en gras
+    textAlign: "center",
+  },
+});
