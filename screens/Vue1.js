@@ -1,10 +1,56 @@
-import React from 'react'
+import React from 'react';
+import { StyleSheet, View, Text, ImageBackground, Image } from 'react-native';
 
-export default function Vue1() {
+
+const Vue1 = () => {
   return (
-    <div>Vue1</div>
-  )
-}
+    <ImageBackground
+      source={require('../assets/images/background.png')}
+      style={styles.imageBackground}
+    >
+      <View
+        style={[
+          styles.container,
+          {
+            flexDirection: 'column',
+          },
+        ]}
+      >
+        <View style={styles.titre}>
+          <Text>Le bateau de Thibault</Text>
+        </View>
+        <Image
+          source={require('../assets/images/TIG.png')}style={styles.img}/>
+        <View style={styles.paratexte}>
+          <Text>Texte de la troisième vue</Text>
+        </View>
+      </View>
+    </ImageBackground>
+  );
+};
 
-// export default function NomDuComponent({ img,titre }: { titre: string,img: ??? }) {}
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  imageBackground: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+  },
+  titre: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  img: {
+    flex: 2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  paratexte:{
+    flex: 3,
+  }
+});
 
+export default Vue1;
