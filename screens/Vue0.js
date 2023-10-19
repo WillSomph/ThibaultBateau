@@ -26,11 +26,11 @@ const Vue0 = ({navigation}) => {
 return (
     <ImageBackground 
       source={require('../assets/images/background.png')}
-      style={styles.imageBackground} // Set styles for the ImageBackground
-      resizeMode="cover" // Adjust this to control how the image scales
+      style={styles.imageBackground}
+      resizeMode="cover" 
 >
         <View style={styles.container}>
-        <Text style={styles.text}>Bienvenue sur mon application</Text>
+        <Text style={styles.text}>Le bateau de Thibault</Text>
 
       <Pressable
       style={({pressed}) => ({backgroundColor: 'red', padding: 10, margin: 30, opacity: pressed ? 0.5 : 1, borderRadius: 10})}
