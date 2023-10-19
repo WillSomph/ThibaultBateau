@@ -40,7 +40,6 @@ export default function App() {
         <ImageBackground source={backgroundImageSource} style={styles.imageBackground}>
           <Stack.Navigator screenOptions ={{ gestureEnabled: true, gestureDirection: 'horizontal'}}>
           <Stack.Screen name="Vue0" component={Vue0}/>      
-          {/* options={{ headerShown: false }}   */}
           <Stack.Screen name="Vue1" component={Vue1} />   
           <Stack.Screen name="Vue2" component={Vue2} />   
           <Stack.Screen name="Vue3" component={Vue3} />   
