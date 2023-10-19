@@ -104,8 +104,8 @@ const styles = StyleSheet.create({
         transitionDuration: 0.4,
     }, 
     imageBackground: {
-        flex: 1, // Ensure the image fills the entire container
-        width: '100%', // Set the width to 100% of the container
-        height: '100%', // Set the height to 100% of the container
+        flex: 1, // img qui prend tout l'ecran
+        width: '100%',
+        height: '100%', 
       },
 })
