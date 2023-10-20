@@ -31,18 +31,10 @@ const Vue0 = ({ navigation }) => {
       style={styles.imageBackground}
       resizeMode="cover"
     >
-      <Text style={styles.text}>Le bateau de Thibault</Text>
+      <Text style={styles.title}>Le bateau de Thibault</Text>    
       <View style={styles.container}>
-        <Text style={styles.centeredText}>Vente en direct de notre bateau</Text>
-        <Text style={styles.centeredText}>
-          Produits selon la saison, Livraison sur Paris
-        </Text>
-        <Text style={styles.centeredText}>06.63.99.99.78</Text>
-        <Text style={styles.centeredText}>lebateaudethibault@gmail.com</Text>
-        <Text style={styles.centeredText}>
-          www.facebook.com/lebateaudethibault
-        </Text>
-
+      <Text style={styles.textBold}>Vente en direct de notre bateau{"\n"}Produit selon la saison, Livraisons sur Paris</Text>
+    <Text style={styles.text}>06.63.99.99.78~{"\n"}lebateaudethibault@gmail.com~{"\n"}www.facebook/lebateaudethibault</Text>
         <View style={styles.row}>
           <TouchableOpacity
             style={styles.buttonContainer}
@@ -109,7 +101,7 @@ export default Vue0;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "flex-end",
+    justifyContent: "center",
     padding: 5,
   },
   centeredText: {
@@ -117,12 +109,19 @@ const styles = StyleSheet.create({
     textAlign: "center", // Centrez le texte
     marginVertical: 0.5, // Ajoutez une marge verticale
   },
-  text: {
+  title: {
+    fontFamily:'Brush Script MT',
+    fontSize: 40,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'white',
+  },
+  textBold: {
+    fontFamily:'Brush Script MT',
+    color: 'black',
     fontSize: 20,
-    fontWeight: "bold",
-    color: "blue",
-    textAlign: "center", // Centrez le texte
-    marginBottom: 10, // Ajoutez une marge inférieure pour l'espace supplémentaire
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
   btn: {
     padding: 10,
@@ -139,6 +138,12 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     height: "100%",
+  },
+  text: {
+    color: 'black',
+    fontSize: 20,
+    textAlign: 'center',
+    fontFamily:'Brush Script std',
   },
   row: {
     flexDirection: "row", // ajout des elements 1 par 1 en ligne

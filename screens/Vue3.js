@@ -40,12 +40,10 @@ const handlePress5 = () => {
       style={styles.imageBackground}
       resizeMode="cover"
     >
-      <Text style={styles.text}>Restaurants partenaires</Text>
+      <Text style={styles.title}>Restaurants partenaires</Text>
       <View style={styles.container}>
-        <Text style={styles.centeredText}>Tous les restaurants avec le bateau de Thibault</Text>
-        <Text style={styles.centeredText}>06.63.99.99.78</Text>
-        <Text style={styles.centeredText}>lebateaudethibault@gmail.com</Text>
-        <Text style={styles.centeredText}>www.facebook.com/lebateaudethibault</Text>
+      <Text style={styles.textBold}>Toutes les restaurants partenaires avec le bateau de Thibault</Text>
+    <Text style={styles.text}>06.63.99.99.78~{"\n"}lebateaudethibault@gmail.com~{"\n"}www.facebook/lebateaudethibault</Text>
 
         <View style={styles.row}>
           <TouchableOpacity
@@ -99,20 +97,28 @@ export default Vue3;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     padding: 5,
   },
-  centeredText: {
-    fontSize: 15,
-    textAlign: 'center', // Centrez le texte
-    marginVertical: 0.5, // Ajoutez une marge verticale
+  title: {
+    fontFamily:'Brush Script MT',
+    fontSize: 40,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'white',
   },
   text: {
+    color: 'black',
+    fontSize: 20,
+    textAlign: 'center',
+    fontFamily:'Brush Script std',
+  },
+  textBold: {
+    fontFamily:'Brush Script MT',
+    color: 'black',
     fontSize: 20,
     fontWeight: 'bold',
-    color: 'blue',
-    textAlign: 'center', // Centrez le texte
-    marginBottom: 10, // Ajoutez une marge inférieure pour l'espace supplémentaire
+    textAlign: 'center',
   },
   btn: {
     padding: 10,
