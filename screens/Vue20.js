@@ -11,7 +11,7 @@ return (
       source={require('../assets/background.png')}
     >
     
-    <View style={styles.container}>
+    <View style={styles.containerImg}>
 
     <Text style={styles.title}>De la Brise</Text>
 
@@ -45,21 +45,30 @@ export default Vue20;
 
 const styles = StyleSheet.create({
     container: {
-
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+      flex: 1,
+      justifyContent: 'center',
+      padding: 5,
     },
+    containerImg: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems:'center',
+      padding: 5,
+    },
+    
     btn:{
-        backgroundColor: 'red',
-        width: '100%',
-        padding: 10,
-        margin: 10,
-        borderRadius: 10,
+      flexDirection:'row',// elements 1 par 1 en ligne
+      flex: 1,
+      backgroundColor: 'rgba(0, 0, 0, 0.35)', // shader des buttons
+      borderRadius: 5, // Ajoutez des coins arrondis
+      alignItems: 'center', // Centrez les éléments horizontalement
+      justifyContent: 'center', // Centrez les éléments verticalement
+      padding: 5, // Ajoutez un espace intérieur
+      margin:2,
     }, 
     imageBackground: {
         flex: 1, // Ensure the image fills the entire container
-        width: '100%', // Set the width to 100% of the container // Set the width to 100% of the container
+        width: '100%', // Set the width to 100% of the container
         height: '100%', // Set the height to 100% of the container
       },
       title: {
@@ -69,14 +78,16 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         color: 'black',
       },
-      imageAvant: {
-        width: '70%',
-        height: '40%',
-      },
       image: {
         flex: 1,
         justifyContent: 'center',
       },
+imageAvant: {
+       justifyContent: 'center',
+       width: '55%',
+       height: '35%',
+      },
+
       text: {
         color: 'black',
         fontSize: 20,
@@ -92,14 +103,14 @@ const styles = StyleSheet.create({
       },
       textButton: {
         fontFamily:'Brush Script std',
-        color: 'white',
+        color: 'black',
         fontSize: 20,
         textAlign: 'center',
       },
       viewButton:{
-        justifyContent: 'space-evenly',
-        flexDirection: 'row',
-        justifyContent: 'center',
+        flexDirection: 'row', // ajout des elements 1 par 1 en ligne
+        justifyContent: 'space-between',
+        marginVertical: 10, // Ajoutez une marge verticale entre les rangées de boutons
       },
 
 })

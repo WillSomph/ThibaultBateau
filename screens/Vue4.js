@@ -19,29 +19,29 @@ return (
     <Text style={styles.text}>06.63.99.99.78~{"\n"}lebateaudethibault@gmail.com~{"\n"}www.facebook/lebateaudethibault</Text>
 
     <View style={styles.viewButton}>
-      <Pressable onPress={()=>navigation.navigate('Vue40')}>
-      <View style={styles.btn}> <Text style={styles.textButton}>Homard</Text> </View>
+      <Pressable style={styles.btn} onPress={()=>navigation.navigate('Vue40')}>
+      <View> <Text style={styles.textButton}>Homard</Text> </View>
       </Pressable>
-      <Pressable onPress={()=>navigation.navigate('Vue41')}>
-      <View style={styles.btn}> <Text style={styles.textButton}>St Jacques</Text> </View>
-      </Pressable>
-    </View>
-
-    <View style={styles.viewButton}>
-      <Pressable onPress={()=>navigation.navigate('Vue42')}>
-      <View style={styles.btn}> <Text style={styles.textButton}>Bar</Text></View>
-      </Pressable>
-      <Pressable onPress={()=>navigation.navigate('Vue43')}>
-      <View style={styles.btn}> <Text style={styles.textButton}>Recette</Text></View>
+      <Pressable style={styles.btn} onPress={()=>navigation.navigate('Vue41')}>
+      <View> <Text style={styles.textButton}>St Jacques</Text> </View>
       </Pressable>
     </View>
 
     <View style={styles.viewButton}>
-      <Pressable onPress={()=>navigation.navigate('Vue43')}>
-      <View style={styles.btn}> <Text style={styles.textButton}>Recette</Text></View>
+      <Pressable style={styles.btn} onPress={()=>navigation.navigate('Vue42')}>
+      <View> <Text style={styles.textButton}>Bar</Text></View>
       </Pressable>
-      <Pressable onPress={()=>navigation.navigate('Vue43')}>
-      <View style={styles.btn}> <Text style={styles.textButton}>Recette</Text></View>
+      <Pressable style={styles.btn} onPress={()=>navigation.navigate('Vue43')}>
+      <View> <Text style={styles.textButton}>Recette</Text></View>
+      </Pressable>
+    </View>
+
+    <View style={styles.viewButton}>
+      <Pressable style={styles.btn} onPress={()=>navigation.navigate('Vue43')}>
+      <View> <Text style={styles.textButton}>Recette</Text></View>
+      </Pressable>
+      <Pressable style={styles.btn} onPress={()=>navigation.navigate('Vue43')}>
+      <View> <Text style={styles.textButton}>Recette</Text></View>
       </Pressable>
     </View>
 
@@ -56,17 +56,26 @@ export default Vue4;
 
 const styles = StyleSheet.create({
     container: {
-
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+      flex: 1,
+      justifyContent: 'center',
+      padding: 5,
     },
+    containerImg: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems:'center',
+      padding: 5,
+    },
+    
     btn:{
-        backgroundColor: 'grey',
-        width: '100%',
-        margin: 5,
-        padding: 15,
-        borderRadius: 10,
+      flexDirection:'row',// elements 1 par 1 en ligne
+      flex: 1,
+      backgroundColor: 'rgba(0, 0, 0, 0.35)', // shader des buttons
+      borderRadius: 5, // Ajoutez des coins arrondis
+      alignItems: 'center', // Centrez les éléments horizontalement
+      justifyContent: 'center', // Centrez les éléments verticalement
+      padding: 5, // Ajoutez un espace intérieur
+      margin:2,
     }, 
     imageBackground: {
         flex: 1, // Ensure the image fills the entire container
@@ -84,6 +93,12 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
       },
+imageAvant: {
+       justifyContent: 'center',
+       width: '55%',
+       height: '35%',
+      },
+
       text: {
         color: 'black',
         fontSize: 20,
@@ -104,9 +119,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
       },
       viewButton:{
-        justifyContent: 'space-evenly',
-        flexDirection: 'row',
-        justifyContent: 'center',
+        flexDirection: 'row', // ajout des elements 1 par 1 en ligne
+        justifyContent: 'space-between',
+        marginVertical: 10, // Ajoutez une marge verticale entre les rangées de boutons
       },
 
 })
