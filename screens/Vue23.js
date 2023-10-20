@@ -17,7 +17,7 @@ return (
 
     <Image
         style={styles.imageAvant}
-        resizeMode="cover"
+        resizeMode="contain"
         source={require('../assets/images/aquilon@3x.png')}
     />
     <Text style={styles.textBold}>XXX YYY ZZZ{"\n"}</Text>

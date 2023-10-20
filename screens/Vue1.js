@@ -17,7 +17,7 @@ return (
 
     <Image
         style={styles.imageAvant}
-        resizeMode="cover"
+        resizeMode="contain"
         source={require('../assets/images/TIG.png')}
     />
 
